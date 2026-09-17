@@ -137,7 +137,7 @@ body main #home {
 }
 
 body main #home .info span .text h1:first-child {
-    font-size: 80px;
+    font-size: 40px;
     font-weight: 500;
     color: var(--hover);
 }
@@ -535,6 +535,10 @@ body main #skills .specialized {
     justify-self: center;
     align-self: center;
 }
+body main #skills .specialized:hover h2{
+    text-indent: 80px;
+    transition-duration: 1s;
+}
 
 body main #skills .heading {
     width: 250px;
@@ -563,7 +567,10 @@ body main #skills .heading:hover {
 body main #skills .heading h2 {
     color: var(--hover);
 }
-
+body main #skills .web:hover h6:last-child{
+    text-indent: 80px;
+    transition-duration: 1s;
+}
 
 /* projects */
 body main #projects {
