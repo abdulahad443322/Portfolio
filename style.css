@@ -1692,7 +1692,7 @@ footer img {
 
 
 
-@media (max-width:427px) {
+@media (max-width:450px) {
     :root {
         --font: Verdana, Geneva, Tahoma, sans-serif, Helvetica, sans-serif;
         --background: rgb(255, 254, 252);
@@ -1704,45 +1704,123 @@ footer img {
         /* --button-text:var(--background); */
     }
 
-    /* grid */
+    body header{
+        position: relative;
+        top: 5px;
+        width: 800px;
+    }
+    body header nav{
+        justify-content: space-between;
+    }
+    body header nav .links{
+        gap: 10px;
+    }
 
+    /* grid */
+    body main{
+        display: flex;
+        flex-direction: column;
+        width: 200%;
+    }
     /* home */
+    body main #home{
+        position: relative;
+        top: 100px;
+        left: 20px;
+        width: 100%;
+        height: 600px;
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 100px;
+
+    }
+    body main #home .info{
+        position: relative;
+        width: 100%;
+        height: 250px;
+        box-sizing: border-box;
+        gap: 50px;
+        top: 250px;
+    }
     body main #home .info span .text h1:first-child {
-        font-size: 40px;
+        font-size: 30px;
         font-weight: 500;
         color: var(--hover);
     }
 
     body main #home .info span .text h1:last-child {
-        font-size: 60px;
+        font-size: 50px;
         font-weight: 600;
         color: var(--button-color);
         padding-bottom: 10px;
     }
 
     body main #home .info span .skill h5 {
-        font-size: 20px;
+        font-size: 24px;
         font-weight: 500;
         display: inline-block;
     }
 
     body main #home .info .paragraph p:first-child {
         font-size: 30px;
-        padding-bottom: 20px;
+        padding-bottom: 5px;
         color: var(--button-color);
     }
 
     body main #home .info .paragraph p:last-child {
-        line-height: 30px;
+        font-size: 20px;
+        line-height: 25px;
+    }
+    body main #home .info .buttons .btn{
+        width: 200px;
+        height: 80px;
+    }
+    body main #home .image{
+        width: 70%;
+        height: 500px;
+        padding: 20px;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        position: relative;
+        top: 150px;
+        border: 1px solid var(--button-color);
+        box-shadow: 0px 0px 150px 15px var(--button-color) ;
+    }
+    body main #home .image img{
+        width: 100%;
+        height: 100%;
+        box-sizing: border-box;
+        opacity: 1;
+        border-bottom: none;
+        box-shadow: 0px 0px 150px 15px var(--button-color) inset;
     }
 
     /* about */
+    body main #about{
+        border-top: 1px solid var(--text-color);
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        top: 900px;
+        gap: 70px;
+        height: 1000px;
+    }
+    body main #about .left{
+        position: relative;
+        top: 250px;
+        height: 700px;
+    }
     body main #about .left h2 {
         text-align: center;
         padding: 5px;
         box-sizing: border-box;
         font-size: 40px;
-        border-bottom: 2px solid var(--text-color);
+        border-bottom: none;
+        position: relative;
+        bottom: 80px;
+        border-radius: 20px;
         color: var(--button-color);
         text-shadow: 0px 0px 50px var(--hover2);
     }
@@ -1766,12 +1844,21 @@ footer img {
     body main #about .left .info {
         padding: 0px 50px;
     }
-
+    body main #about .right{
+        position: relative;
+        top: 250px;
+        height: 700px;
+    }
+    body main #about .right .box{
+        width: 250px;
+        height: 250px;
+        margin: 20px;
+    }
     body main #about .down {
-        grid-column: 1/3;
-        grid-row: 2/3;
         width: 100%;
-        height: 100%;
+        height: 700px;
+        position: relative;
+        top: 250px;
         box-sizing: border-box;
         border: 2px solid var(--button-color);
         border-radius: 20px;
@@ -1789,24 +1876,43 @@ footer img {
     }
 
     /* skills */
+    body main #skills{
+        position: relative;
+        border-top: 1px solid var(--text-color);
+        top: 1500px;
+        display: flex;
+        flex-direction: column;
+    }
     body main #skills .box {
-        height: 150px;
-        width: 200px;
+        height: 500px;
+        width: 500px;
         border: 2px solid var(--hover);
         background-color: var(--background);
         border-radius: 10px;
-        box-shadow: 0px 0px 20px 5px var(--button-color);
+        box-shadow: 0px 0px 50px 10px var(--button-color);
+        position: relative;
+        top: 250px;
+        margin: 20px;
+    }
+    body main #skills .box:hover{
+        transform: none;
+        animation: none;
+        transition: none;
+    }
+    body main #skills .specialized:hover{
+        margin-top: none;
+        transition: none;
     }
 
     body main #skills .box h2 {
-        font-size: 20px;
-        padding: 10px;
+        font-size: 30px;
+        padding: 20px;
         color: var(--hover);
     }
 
     body main #skills .box h6 {
-        font-size: 10px;
-        padding: 2px 10px;
+        font-size: 20px;
+        padding: 5px 20px;
     }
 
     body main #skills .web:hover h6:last-child {
@@ -1816,17 +1922,135 @@ footer img {
 
     body main #skills .specialized:hover h2 {
         text-indent: 0px;
-        margin-top: 15px;
-        transition-duration: 1s;
+        margin-top: none;
+        transition-duration: 0s;
+    }
+    body main #skills .background{
+        display: none;
+    }
+    body main #skills .heading{
+        position: relative;
+        bottom: 1000px;
     }
 
     /* projects */
-
+    body main #projects{
+        position: relative;
+        top: 2300px;
+        border-top: 1px solid var(--text-color);
+        display: flex;
+        flex-direction: column;
+        height: 1500px;
+    }
+    body main #projects::before{
+        content: "Projects";
+        align-self: center;
+        font-size: 40px;
+        font-weight: 600;
+        color: var(--hover);
+    }
+    body main #projects .box{
+        height: 500px;
+    }
     /* experience */
-
+    
+    body main #experience{
+        height: 1500px;
+        position: relative;
+        top: 2400px;
+        border-top: 1px solid var(--text-color);
+    }
+    body main #experience .heading{
+        display: none;
+    }
+    body main #experience::before{
+        background-image: none;
+        content: "My Experiences";
+        text-align: center;
+        color: var(--hover);
+        font-size: 40px;
+        font-weight: 600;
+    }
+    body main #experience .item{
+        height: 180px;
+        border:2px solid var(--text-color);
+        border-radius: 30px;
+    }
+    
     /* services */
+    
+    body main #services{
+        height: 1500px;
+        position: relative;
+        top: 2500px;
+        border-top: 1px solid var(--text-color);
+    }
+    body main #services::before{
+        background-image: none;
+    }
+    body main #services h3{
+        font-size: 50px;
+    }
+    body main #services .content{
+        margin: 20px;
+    }
+    body main #services .content svg{
+        width: 40px;
+        height: 40px;
+    }
+    body main #services .content h4{
+        font-size: 30px;
+    }
+    body main #services .content p{
+        font-size: 22px;
+    }
 
     /* contact */
+    body main #contact{
+        height: 1500px;
+        position: relative;
+        top: 2600px;
+        border-top: 1px solid var(--text-color);
+        display: flex;
+        flex-direction: column;
+    }
+    body main #contact .left{
+        height: 700px;
+        width: 100%;
+    }
+    body main #contact .left .heading{
+        font-size: 30px;
+        width: 100%;
+        margin: 20px;
+    }
+    body main #contact .left form{
+        width: 500px;
+        height: 600px;
+        box-sizing: border-box;
+        margin: 50px;
+    }
+    body main #contact .right{
+        display: flex;
+        flex-direction: column;
+    }
+    body main #contact .right .links{
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        width: 500px;
+    }
+    body main #contact .right .email{
+        width: 500px;
+    }
+    body main #contact .right .email h3{
+        font-size: 40px;
+    }
+    body main #contact .right .email a{
+        font-size: 30px;
+    }
+    body main #contact .right .links p:first-child{
+        display: none;
+    }
     body main #contact .right .links .link {
         background-color: var(--background);
     }
@@ -1865,5 +2089,10 @@ footer img {
         border-color: var(--button-color);
         transform: translateY(-7px);
         transition-duration: 0.5s;
+    }
+    body footer{
+        width: 800px;
+        position: relative;
+        top: 2500px;
     }
 }
