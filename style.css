@@ -1695,12 +1695,12 @@ footer img {
 @media (max-width:450px) {
     :root {
         --font: Verdana, Geneva, Tahoma, sans-serif, Helvetica, sans-serif;
-        --background: rgb(255, 254, 252);
-        --text-color: rgba(9, 9, 9, 0.5);
+        --background: rgb(2, 1, 35);
+        --text-color: rgba(175, 175, 175, 0.5);
         --font-size: 12px;
-        --button-color: rgb(220, 95, 251);
-        --hover: black;
-        --hover2: rgb(249, 79, 243);
+        --button-color: rgb(95, 241, 251);
+        --hover: rgb(250, 250, 250);
+        --hover2: rgb(79, 223, 249);
         /* --button-text:var(--background); */
     }
     body{
