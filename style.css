@@ -1703,6 +1703,9 @@ footer img {
         --hover2: rgb(249, 79, 243);
         /* --button-text:var(--background); */
     }
+    body{
+        width: 350px;
+    }
 
     body header{
         position: relative;
