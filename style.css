@@ -1804,7 +1804,7 @@ footer img {
     }
 
     body main #home .info span .text h1:last-child {
-        font-size: clamp(42px, 13vw, 62px);
+        font-size: 36px;
         padding-bottom: 8px;
         line-height: 1.05;
     }
@@ -1835,16 +1835,16 @@ footer img {
     }
 
     body main #home .image {
-        width: min(100%, 360px);
-        height: auto;
+        width: min(60%, 360px);
+        height: 200px;
         aspect-ratio: 1 / 1;
-        padding: 10px;
+        padding: 5px;
         margin: 0 auto;
         display: flex;
         justify-content: center;
         align-items: center;
         position: static;
-        border: 1px solid var(--button-color);
+        border: none;
         box-shadow: 0 0 70px 8px var(--button-color);
         box-sizing: border-box;
     }
@@ -1852,9 +1852,11 @@ footer img {
     body main #home .image img {
         width: 100%;
         height: 100%;
-        object-fit: contain;
+        object-fit: cover;
+        object-position: top;
         opacity: 1;
-        box-shadow: none;
+        border: none;
+        box-shadow: 0 0 50px 8px var(--button-color) inset;
     }
 
     /* About */
@@ -1878,7 +1880,7 @@ footer img {
     }
 
     body main #about .left h2 {
-        font-size: clamp(30px, 9vw, 42px);
+        font-size: 30px;
         padding: 10px;
     }
 
